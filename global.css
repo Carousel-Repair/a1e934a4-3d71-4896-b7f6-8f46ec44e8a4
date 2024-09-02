@@ -1,25 +1,28 @@
-/* FONTS */
-@font-face {
-    font-family: 'Glacial Indifference';
-    src: url('./fonts/glacialindifference-regular-webfont.woff2') format('woff2'),
-         url('./fonts/glacialindifference-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+/* a1e934a4-3d71-4896-b7f6-8f46ec44e8a4 */
+:root {
+    --csa-text: #102D35;
+    --csa-card-bg: #F6F4F1;
   }
   
-  @font-face {
-    font-family: 'Glacial Indifference';
-    src: url('./fonts/glacialindifference-bold-webfont.woff2') format('woff2'),
-         url('./fonts/glacialindifference-bold-webfont.woff') format('woff');
-    font-weight: bold;
+/* FONTS */
+@font-face {
+    font-family: 'Cormorant';
+    src: url('./fonts/Cormorant-Regular.woff2') format('woff2');
+    font-weight: normal;
     font-style: normal;
   }
 
   @font-face {
-    font-family: 'Canela';
-    src: url('./fonts/canela-thin-web-webfont.woff2') format('woff2'),
-         url('./fonts/canela-thin-web-webfont.woff') format('woff');
-    font-weight: 100;
+    font-family: 'Cormorant';
+    src: url('./fonts/Cormorant-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'neue-haas-grotesk-display';
+    src: url('./fonts/neuehaasdisplayroman-webfont.woff2') format('woff2');
+    font-weight: normal;
     font-style: normal;
   }
 
@@ -53,38 +56,38 @@
 }
 
 .csa-text-title {
-    font-family: 'Canela', Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Cormorant', Georgia, 'Times New Roman', Times, serif;
     font-size: 32px;
-    color: #000;
+    color: var(--csa-text);
 }
 
 .csa-text-header {
-    font-family: 'Canela', Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Cormorant', Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
-    color: #000;
+    color: var(--csa-text);
     font-weight: 400;
     line-height: 32px;
 }
 
 .csa-text-regular {
-    font-family: 'Canela', Georgia, 'Times New Roman', Times, serif;
+    font-family: 'neue-haas-grotesk-display', Georgia, 'Times New Roman', Times, serif;
     font-size: 16px;
-    color: #000;
+    color: var(--csa-text);
     font-weight: 600;
     line-height: 18px;
     letter-spacing: 0.6px;
 }
 
 .csa-text-bold {
-    font-family: 'Glacial Indifference', Georgia, 'Times New Roman', Times, serif;
+    font-family: 'neue-haas-grotesk-display', Georgia, 'Times New Roman', Times, serif;
     font-size: 16px;
-    color: #000;
+    color: var(--csa-text);
     font-weight: 400;
     line-height: 1.4rem;
 }
 
 .csa-text-completion-date {
-    font-family: 'Canela', Georgia, 'Times New Roman', Times, serif;
+    font-family: 'neue-haas-grotesk-display', Georgia, 'Times New Roman', Times, serif;
     font-size: 46px;
 }
 /* COMMON */
@@ -97,7 +100,7 @@
 }
 
 .csa-section-search {
-   font-family: 'Canela', Georgia, 'Times New Roman', Times, serif;
+   font-family: 'neue-haas-grotesk-display', Georgia, 'Times New Roman', Times, serif;
 	display: flex;
 	flex-direction: column;
     padding: 0 0 2rem 0;
@@ -204,7 +207,7 @@
 .csa-section-status {
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    background-color: #fffefe;
+    background-color: var(--csa-card-bg);
     border: 0 solid #000;
     border-radius: 16px;
     justify-content: flex-start;
@@ -234,7 +237,7 @@
     line-height: 1.4rem;
 }
 .csa-section-heading {
-    color: #000;
+    color: var(--csa-text);
     width: auto;
     margin-top: 0;
     padding-bottom: 10px;
@@ -385,7 +388,7 @@
 }
 
 .csa-footer-btn {
-    font-family: 'Canela', Georgia, 'Times New Roman', Times, serif;
+    font-family: 'neue-haas-grotesk-display', Georgia, 'Times New Roman', Times, serif;
     font-size: 1rem;
     margin: 2rem;
     padding: 0.2rem 1.2rem;
