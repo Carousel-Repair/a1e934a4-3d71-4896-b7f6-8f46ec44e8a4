@@ -2,6 +2,7 @@
 :root {
     --csa-text: #102D35;
     --csa-card-bg: #F6F4F1;
+    --cas-button-accent: #003333;
   }
   
 /* FONTS */
@@ -148,7 +149,7 @@
     border: 1px solid #ccc;
     width: 100%; 
     padding: 8px 12px;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.42857;
     box-sizing: border-box;
 }
@@ -410,7 +411,7 @@
     text-align: center;
 }
 .csa-footer-btn:hover, .csa-footer-btn:active {
-    background-color: blue;
+    background-color: var(--cas-button-accent);
     color: #fff;
 }
 .csa-footer-gap {
