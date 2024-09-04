@@ -41,13 +41,13 @@
 }
 
 .carousel-search-app-container {
-    width: 860px;
+    width: 100%;
 }
 
 .csa-card {
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    background-color: #fffefe;
+    background-color: var(--csa-card-bg);
     border: 0;
     border-radius: 16px;
     justify-content: flex-start;
