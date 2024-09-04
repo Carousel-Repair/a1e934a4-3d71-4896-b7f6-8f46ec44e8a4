@@ -57,7 +57,7 @@
 
 .csa-text-title {
     font-family: 'Cormorant', Georgia, 'Times New Roman', Times, serif;
-    font-size: 32px;
+    font-size: 38px;
     color: var(--csa-text);
 }
 
@@ -87,12 +87,16 @@
 }
 
 .csa-text-completion-date {
-    font-family: 'neue-haas-grotesk-display', Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Cormorant', Georgia, 'Times New Roman', Times, serif;
     font-size: 46px;
 }
 /* COMMON */
 
 /* Search Bar */
+.csa-repairs-search-number, .csa-repairs-search-lname{
+    font-size: 16px;
+}
+
 .csa-not-found-msg {
     text-align: center;
     padding: 1rem;
@@ -236,6 +240,7 @@
     font-weight: bold;
     line-height: 1.4rem;
 }
+
 .csa-section-heading {
     color: var(--csa-text);
     width: auto;
@@ -382,6 +387,10 @@
     margin: 5px;
 }
 
+.csa-text-current-repair {
+    margin-top: 8px;
+}
+
 /* FOOTER */
 .csa-card-footer {
     background-color: #000;
@@ -397,8 +406,12 @@
     border: 1px solid white;
     border-radius: 16px;
     width: 100%;
+    text-decoration: none;
+    text-align: center;
 }
-
+.csa-footer-btn:hover, .csa-footer-btn:active {
+    background-color: blue;
+}
 .csa-footer-gap {
     width: 100%;
 }
@@ -525,6 +538,14 @@
 
 .csa-result-container--mobile {
     display: none;
+}
+
+.csa-result-container--mobile .csa-artisan-notes .csa-layout-vflex {
+    align-items: center;
+}
+
+.csa-result-container--mobile .csa-text-regular.csa-text-return-address {
+    font-family: 'Cormorant', Georgia, 'Times New Roman', Times, serif;
 }
 
 @media (max-width: 600px) {
